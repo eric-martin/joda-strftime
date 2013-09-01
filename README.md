@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/eric-martin/joda-strftime.png)](https://travis-ci.org/eric-martin/joda-strftime)
 
-A strftime DateTimeFormat object for the Joda-Time libraryzz
+A strftime DateTimeFormat object for the Joda-Time library
 
 ## Usage
 
