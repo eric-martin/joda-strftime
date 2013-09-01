@@ -20,7 +20,7 @@ package com.triptheone.joda;
  * 
  * @author Eric Martin
  */
-public class StrftimeFormat {
+class StrftimeFormat {
 	
 	/**
 	 * TODO
