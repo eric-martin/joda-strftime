@@ -15,6 +15,7 @@
  */
 package com.triptheone.joda;
 
+import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 /**
@@ -40,8 +41,15 @@ public class StrftimeDateTimeFormat {
 	 * @return TODO
 	 */
 	public static DateTimeFormatter forPattern(final String pattern) {
-		// TODO
-		return null;
+		if (pattern == null) {
+			throw new NullPointerException("Pattern must be non-null");
+		}
+		
+		if (pattern.length() == 0) {
+			throw new IllegalArgumentException("Pattern must be non-empty");
+		}
+		
+		return DateTimeFormat.forPattern(StrftimeFormat.toDateTimeFormatPattern(pattern));
 	}
 	
 	/**

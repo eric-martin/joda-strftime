@@ -21,5 +21,29 @@ package com.triptheone.joda;
  * @author Eric Martin
  */
 public class StrftimeFormat {
+	
+	/**
+	 * TODO
+	 * @param pattern TODO
+	 * @return TODO
+	 */
+	public static String toDateTimeFormatPattern(final String pattern) {
+		if (pattern == null) {
+			throw new NullPointerException("Pattern must be non-null");
+		}
+		
+		if (pattern.length() == 0) {
+			throw new IllegalArgumentException("Pattern must be non-empty");
+		}
 
+		// TODO
+		
+		return pattern;
+	}
+	
+	/**
+	 * Hidden to prevent construction
+	 */
+	private StrftimeFormat() {
+	}
 }
