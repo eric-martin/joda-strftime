@@ -49,7 +49,7 @@ public class StrftimeDateTimeFormat {
 			throw new IllegalArgumentException("Pattern must be non-empty");
 		}
 		
-		return DateTimeFormat.forPattern(StrftimeFormat.toDateTimeFormatPattern(pattern));
+		return DateTimeFormat.forPattern(StrftimeFormat.toJodaFormat(pattern));
 	}
 	
 	/**

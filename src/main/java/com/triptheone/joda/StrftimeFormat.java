@@ -27,7 +27,7 @@ public class StrftimeFormat {
 	 * @param pattern TODO
 	 * @return TODO
 	 */
-	public static String toDateTimeFormatPattern(final String pattern) {
+	public static String toJodaFormat(final String pattern) {
 		if (pattern == null) {
 			throw new NullPointerException("Pattern must be non-null");
 		}
