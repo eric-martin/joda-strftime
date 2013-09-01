@@ -7,7 +7,8 @@ A strftime DateTimeFormat object for the Joda-Time library
 ## Usage
 
 ```java
-TODO
+DateTimeFormatter formatter = StrftimeDateTimeFormat.forPattern(strftimePattern);
+...
 ```
 
 ## Installation
