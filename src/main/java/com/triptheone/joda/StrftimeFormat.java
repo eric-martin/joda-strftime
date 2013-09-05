@@ -23,21 +23,9 @@ package com.triptheone.joda;
 class StrftimeFormat {
 	
 	/**
-	 * Singleton instance of StrftimeFormat
+	 * Default constructor
 	 */
-	private static final StrftimeFormat STRFTIME_FORMAT = new StrftimeFormat();
-	
-	/**
-	 * @return Instance of StrftimeFormat
-	 */
-	public static StrftimeFormat getInstance() {
-		return STRFTIME_FORMAT;
-	}
-	
-	/**
-	 * Hidden to prevent construction
-	 */
-	private StrftimeFormat() {
+	public StrftimeFormat() {
 	}
 	
 	/**

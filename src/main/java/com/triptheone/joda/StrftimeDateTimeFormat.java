@@ -36,6 +36,11 @@ import org.joda.time.format.DateTimeFormatter;
 public class StrftimeDateTimeFormat {
 
 	/**
+	 * Shared instance of a StrftimeFormat object
+	 */
+	private static final StrftimeFormat STRFTIME_FORMAT = new StrftimeFormat();
+	
+	/**
 	 * TOOD
 	 * @param pattern TODO
 	 * @return TODO
@@ -49,7 +54,7 @@ public class StrftimeDateTimeFormat {
 			throw new IllegalArgumentException("Pattern must be non-empty");
 		}
 		
-		return DateTimeFormat.forPattern(StrftimeFormat.getInstance().toJodaFormat(pattern));
+		return DateTimeFormat.forPattern(STRFTIME_FORMAT.toJodaFormat(pattern));
 	}
 	
 	/**
