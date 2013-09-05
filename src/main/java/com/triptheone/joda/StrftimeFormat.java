@@ -23,11 +23,29 @@ package com.triptheone.joda;
 class StrftimeFormat {
 	
 	/**
+	 * Singleton instance of StrftimeFormat
+	 */
+	private static final StrftimeFormat STRFTIME_FORMAT = new StrftimeFormat();
+	
+	/**
+	 * @return Instance of StrftimeFormat
+	 */
+	public static StrftimeFormat getInstance() {
+		return STRFTIME_FORMAT;
+	}
+	
+	/**
+	 * Hidden to prevent construction
+	 */
+	private StrftimeFormat() {
+	}
+	
+	/**
 	 * TODO
 	 * @param pattern TODO
 	 * @return TODO
 	 */
-	public static String toJodaFormat(final String pattern) {
+	public String toJodaFormat(final String pattern) {
 		if (pattern == null) {
 			throw new NullPointerException("Pattern must be non-null");
 		}
@@ -39,11 +57,5 @@ class StrftimeFormat {
 		// TODO
 		
 		return pattern;
-	}
-	
-	/**
-	 * Hidden to prevent construction
-	 */
-	private StrftimeFormat() {
 	}
 }
