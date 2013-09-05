@@ -41,9 +41,9 @@ public class StrftimeDateTimeFormat {
 	private static final StrftimeFormat STRFTIME_FORMAT = new StrftimeFormat();
 	
 	/**
-	 * TOOD
-	 * @param pattern TODO
-	 * @return TODO
+	 * Creates a DateTimeFormatter given the strftime pattern string
+	 * @param pattern strftime pattern string
+	 * @return DateTimeFormatter object
 	 */
 	public static DateTimeFormatter forPattern(final String pattern) {
 		if (pattern == null) {
